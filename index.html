@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&family=Lemonada:wght@500&family=Montserrat:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="logo">
+          <i class="fa-brands fa-accusoft"></i>
+          <h1>Dashboard</h1>
+        </div>
+        <div class="main-links">
+          <div class="links">
+            <i class="fa-solid fa-house"></i>
+            <h3>Home</h3>
+          </div>
+          <div class="links">
+            <i class="fa-solid fa-user"></i>
+            <h3>Profile</h3>
+          </div>
+          <div class="links">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Messages</h3>
+          </div>
+          <div class="links">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <h3>History</h3>
+          </div>
+          <div class="links">
+            <i class="fa-solid fa-list-check"></i>
+            <h3>Tasks</h3>
+          </div>
+          <div class="links">
+            <i class="fa-solid fa-people-group"></i>
+            <h3>Communities</h3>
+          </div>
+        </div>
+        <div class="last-links">
+          <div class="links">
+            <i class="fa-solid fa-gear"></i>
+            <h3>Settings</h3>
+          </div>
+          <div class="links">
+            <i class="fa-solid fa-circle-question"></i>
+            <h3>Support</h3>
+          </div>
+          <div class="links">
+            <i class="fa-solid fa-shield"></i>
+            <h3>Privacy</h3>
+          </div>
+        </div>
+      </div>
+      <div class="header">
+        <div class="header-top">
+          <div></div>
+          <div>Morgan Oakley</div>
+        </div>
+        <div class="header-bottom">
+          <div></div>
+          <div>
+            <ul>
+              <li class="btn">New</li>
+              <li class="btn">Upload</li>
+              <li class="btn">Share</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="projects">
+          <h3>Your Projects</h3>
+          <div class="cards main-cards"></div>
+          <div class="cards main-cards"></div>
+          <div class="cards main-cards"></div>
+          <div class="cards main-cards"></div>
+          <div class="cards main-cards"></div>
+          <div class="cards main-cards"></div>
+        </div>
+        <div class="announcements">
+          <h3>Announcements</h3>
+          <div class="cards side-card"></div>
+        </div>
+        <div class="trending">
+          <h3>Trending</h3>
+          <div class="cards last-card"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.onload = function () {
+        var span = document.createElement("span");
+
+        span.className = "fa";
+        span.style.display = "none";
+        document.body.insertBefore(span, document.body.firstChild);
+
+        alert(
+          window.getComputedStyle(span, null).getPropertyValue("font-family")
+        );
+
+        document.body.removeChild(span);
+      };
+    </script>
+  </body>
+</html>
