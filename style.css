@@ -123,7 +123,7 @@ a {
   padding: 8px;
 }
 
-.user {
+.profile {
   display: flex;
   gap: 40px;
   white-space: nowrap;
@@ -229,12 +229,12 @@ a {
   -moz-box-shadow: 3px 3px 5px 6px #ccc;
   -webkit-box-shadow: 3px 3px 5px 6px #ccc;
   box-shadow: 1px 1px 2px 2.5px darkgrey;
+  padding: 30px 20px;
 }
 
 .main-cards {
   height: 210px;
   border-left: 12px solid orange;
-  padding: 30px 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -253,17 +253,57 @@ a {
 }
 
 .card-icons i:hover {
-  transform: scale(1.2);
+  transform: scale(1.225);
 }
 
 .announcements {
+  height: 80%;
 }
 
 .side-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.announcement {
+}
+
+.announcement p {
+  font-size: 0.8rem;
+}
+
+.smaller-img {
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 1px;
+  background-color: #ccc;
 }
 
 .trending {
+  height: 89%;
+}
+
+.users {
+  display: flex;
+  gap: 20px;
+}
+
+.card-text {
+}
+
+.dark {
+  font-weight: 600;
 }
 
 .last-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
