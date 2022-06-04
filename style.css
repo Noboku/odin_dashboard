@@ -248,12 +248,12 @@ a {
   font-size: 21px;
 }
 
-.card-icons i {
+.card-icons a {
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.05s ease-in-out;
 }
 
-.card-icons i:hover {
+.card-icons a:hover {
   transform: scale(1.225);
 }
 
